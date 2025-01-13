@@ -1,0 +1,21 @@
+import{j as c,c as b,a as y}from"./utils.Bw66zpg3.js";import{r as i}from"./index.BCtMShv3.js";function f(e,t){if(typeof e=="function")return e(t);e!=null&&(e.current=t)}function p(...e){return t=>{let r=!1;const n=e.map(o=>{const s=f(o,t);return!r&&typeof s=="function"&&(r=!0),s});if(r)return()=>{for(let o=0;o<n.length;o++){const s=n[o];typeof s=="function"?s():f(e[o],null)}}}}function B(...e){return i.useCallback(p(...e),e)}var m=i.forwardRef((e,t)=>{const{children:r,...n}=e,o=i.Children.toArray(r),s=o.find(w);if(s){const a=s.props.children,l=o.map(u=>u===s?i.Children.count(a)>1?i.Children.only(null):i.isValidElement(a)?a.props.children:null:u);return c.jsx(d,{...n,ref:t,children:i.isValidElement(a)?i.cloneElement(a,void 0,l):null})}return c.jsx(d,{...n,ref:t,children:r})});m.displayName="Slot";var d=i.forwardRef((e,t)=>{const{children:r,...n}=e;if(i.isValidElement(r)){const o=E(r);return i.cloneElement(r,{...C(n,r.props),ref:t?p(t,o):o})}return i.Children.count(r)>1?i.Children.only(null):null});d.displayName="SlotClone";var x=({children:e})=>c.jsx(c.Fragment,{children:e});function w(e){return i.isValidElement(e)&&e.type===x}function C(e,t){const r={...t};for(const n in t){const o=e[n],s=t[n];/^on[A-Z]/.test(n)?o&&s?r[n]=(...l)=>{s(...l),o(...l)}:o&&(r[n]=o):n==="style"?r[n]={...o,...s}:n==="className"&&(r[n]=[o,s].filter(Boolean).join(" "))}return{...e,...r}}function E(e){let t=Object.getOwnPropertyDescriptor(e.props,"ref")?.get,r=t&&"isReactWarning"in t&&t.isReactWarning;return r?e.ref:(t=Object.getOwnPropertyDescriptor(e,"ref")?.get,r=t&&"isReactWarning"in t&&t.isReactWarning,r?e.props.ref:e.props.ref||e.ref)}const R=y("inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",{variants:{variant:{default:"bg-primary text-primary-foreground shadow hover:bg-primary/90",destructive:"bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",outline:"border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",secondary:"bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",ghost:"hover:bg-accent hover:text-accent-foreground",link:"text-primary underline-offset-4 hover:underline"},size:{default:"h-9 px-4 py-2",sm:"h-8 rounded-md px-3 text-xs",lg:"h-10 rounded-md px-8",icon:"h-9 w-9"}},defaultVariants:{variant:"default",size:"default"}}),j=i.forwardRef(({className:e,variant:t,size:r,asChild:n=!1,...o},s)=>{const a=n?m:"button";return c.jsx(a,{className:b(R({variant:t,size:r,className:e})),ref:s,...o})});j.displayName="Button";/**
+ * @license lucide-react v0.468.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const k=e=>e.replace(/([a-z0-9])([A-Z])/g,"$1-$2").toLowerCase(),g=(...e)=>e.filter((t,r,n)=>!!t&&t.trim()!==""&&n.indexOf(t)===r).join(" ").trim();/**
+ * @license lucide-react v0.468.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */var N={xmlns:"http://www.w3.org/2000/svg",width:24,height:24,viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:2,strokeLinecap:"round",strokeLinejoin:"round"};/**
+ * @license lucide-react v0.468.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const V=i.forwardRef(({color:e="currentColor",size:t=24,strokeWidth:r=2,absoluteStrokeWidth:n,className:o="",children:s,iconNode:a,...l},u)=>i.createElement("svg",{ref:u,...N,width:t,height:t,stroke:e,strokeWidth:n?Number(r)*24/Number(t):r,className:g("lucide",o),...l},[...a.map(([h,v])=>i.createElement(h,v)),...Array.isArray(s)?s:[s]]));/**
+ * @license lucide-react v0.468.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const W=(e,t)=>{const r=i.forwardRef(({className:n,...o},s)=>i.createElement(V,{ref:s,iconNode:t,className:g(`lucide-${k(e)}`,n),...o}));return r.displayName=`${e}`,r};export{j as B,m as S,W as a,x as b,p as c,R as d,B as u};
