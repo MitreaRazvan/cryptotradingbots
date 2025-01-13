@@ -1,0 +1,12 @@
+{
+  "tabWidth": 2,
+  "semi": true,
+  "trailingComma": "all",
+  "plugins": [
+    "prettier-plugin-astro",
+    "prettier-plugin-tailwindcss",
+    "prettier-plugin-organize-imports",
+    "@ianvs/prettier-plugin-sort-imports",
+    "prettier-plugin-merge"
+  ]
+}
