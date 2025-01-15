@@ -1,0 +1,654 @@
+---
+import Search from "@/components/Search";
+import Navbar from "@/components/Navbar";
+import Layout from "@/layouts/Layout.astro";
+import { Button } from "@/components/ui/button";
+import ListWebsites from "@/components/ListWebsites";
+import ListTags from "@/components/ListTags";
+import "@/styles/globals.css";
+import { cn } from "@/lib/utils";
+import { Globe } from "lucide-react";
+import { Image } from "astro:assets";
+import Logo from "../assets/banner.png";
+---
+
+<Layout>
+  <main class="flex min-h-screen flex-col">
+    <Navbar client:load />
+    <section
+      class="container z-10 mx-auto -mb-32 flex max-w-6xl flex-col px-4 py-16 md:px-8"
+    >
+      <div class="flex flex-col items-end gap-8 md:flex-row md:gap-16">
+        <div class="col-span-2 flex flex-1 flex-col">
+          <h1 class="mb-6 text-4xl leading-tight">
+            <strong>SOLTRADINGBOTS</strong><br />
+            <span class="font-light">Find Your Crypto Trading Tools</span>
+            <br />
+            <span class="pt-16 text-[14px] font-light md:pt-0 lg:pt-0">
+              You can find all the trading and sniping guides on our reddit
+              community :
+
+              <span
+                ><a
+                  class="font-bold text-blue-300"
+                  href="https://www.reddit.com/r/SolanaSniperBots/"
+                  >r/soltradingbots</a
+                ></span
+              ></span
+            >
+          </h1>
+          <Search client:load className="w-full" />
+        </div>
+        <div
+          class="flex aspect-video w-auto max-w-full items-center justify-center rounded border bg-background shadow md:w-96 lg:w-96"
+        >
+          <span class="font-light text-muted-foreground"
+            ><Image src={Logo} alt="A bird sitting on a nest of eggs." /></span
+          >
+        </div>
+      </div>
+    </section>
+    <section
+      class="to-red h-32 bg-gradient-to-b from-white to-muted dark:from-black dark:to-muted"
+    >
+    </section>
+    <section class={cn("flex-1 bg-muted")}>
+      <!-- new test section -->
+
+      <!-- 
+Install the "flowbite-typography" NPM package to apply styles and format the article content: 
+
+-->
+
+      <main class="pb-16 pt-8 antialiased lg:pb-24 lg:pt-16">
+        <div class="mx-auto flex max-w-screen-xl justify-between px-4">
+          <article
+            class="format format-sm sm:format-base lg:format-lg format-blue dark:format-invert mx-auto w-full max-w-2xl"
+          >
+            <header class="not-format mb-4 lg:mb-6">
+              <address class="mb-6 flex items-center not-italic">
+                <div
+                  class="mr-3 inline-flex items-center text-sm text-gray-900 dark:text-white"
+                >
+                  <img
+                    class="mr-4 h-auto w-full"
+                    src="https://preview.redd.it/beginners-guide-to-trading-meme-coins-fast-secure-intro-v0-2ntiuh0izyce1.jpg?width=1500&format=pjpg&auto=webp&s=b2817941cddc2bcc597c36aa0144a198f8b836b4"
+                    alt="photon-sol"
+                  />
+                </div>
+              </address>
+              <h1
+                class="mb-4 text-3xl font-extrabold leading-tight text-gray-900 dark:text-white lg:mb-6 lg:text-4xl"
+              >
+                Beginner's Guide Trading Meme Coins Fast & Secure [Intro Guide]
+                - Photon-sol
+              </h1>
+            </header>
+            <p class="lead pb-8">
+              Photon Sol isn’t just another trading platform — it’s the speed
+              demon of Solana trading. Designed for crypto traders who live and
+              die by milliseconds, this tool delivers unprecedented speed for
+              sniping, buying, and selling tokens. <br />
+              <br /> Whether you’re a battle-tested degen or a crypto rookie, Photon
+              Sol strips away complexity, turning lightning-fast trades into a point-and-click
+              experience. No more missed opportunities or agonizing lag.
+            </p>
+
+            <br />
+
+            <p>
+              If you’re looking to trade meme coins on multiple blockchains,
+              using Photon Trading web platform can be a game-changer. Photon is
+              the number 1 web/mobile platform to trade meme coins. Supports
+              trading on Solana, Ethereum, Base, Tron, and Blast. This guide
+              will walk you through the process of how to use Photon to trade
+              meme coins effectively and secure.
+            </p>
+            <br />
+            <a
+              href="https://photon-sol.tinyastro.io/@ma004"
+              class="text-1xl font-bold text-blue-400"
+              ><strong
+                >Join Phton-sol right now - and start trading in 30 seconds</strong
+              >
+            </a>
+            <br />
+            <br />
+
+            <h2 class="pb-4 pt-4 text-2xl font-bold">
+              Getting Started with Photon
+            </h2>
+            <p>
+              Photon offers amazing trading features that make it ideal for both
+              new and experienced traders. Here’s how you can get started:
+            </p>
+            <br />
+            <figure class="pb-8">
+              <img
+                src="https://preview.redd.it/beginners-guide-to-trading-meme-coins-fast-secure-intro-v0-zk7qckuk0zce1.png?width=640&crop=smart&auto=webp&s=781776e7bcc2b497c341c21d00164ad4e42cccd2"
+                alt=""
+              />
+            </figure>
+            <br />
+
+            <p>
+              You go to Photon Sol and connect your phantom wallet, you will be
+              prompted to Photon trading wallet creation screen: You generate
+              your wallet, and you can get started !
+
+              <strong
+                >Please note: Your private key will only be shown once! So make
+                sure you copy it somewhere.
+              </strong>
+            </p>
+            <br />
+            <figure class="pb-8">
+              <img
+                src="https://preview.redd.it/beginners-guide-to-trading-meme-coins-fast-secure-intro-v0-7dt5f1451zce1.jpg?width=640&crop=smart&auto=webp&s=53c74e6a274149a7d5164f908e1151d2c88ddd06"
+                alt=""
+              />
+            </figure>
+            <br />
+
+            <!-- <ol>
+              <li>
+                <strong>One-Click Trading:</strong>.The platform allows for
+                snipe buying and selling in a single click, bypassing the need
+                for complex navigation or multiple steps to execute a trade.
+              </li>
+              <br />
+              <br />
+              <li>
+                <strong>Real-Time Trading Data:</strong>. Users have access to
+                live pairs feed, trending page, and detailed token analysis,
+                ensuring they can make informed decisions quickly.
+              </li><br />
+              <br />
+              <li>
+                <strong>Advanced Trading Settings:</strong>. Traders can
+                customize slippage settings and prioritize fees to optimize
+                their trading strategy and execution speed.
+              </li><br />
+              <br />
+              <li>
+                <strong>Secure Wallet Integration:</strong>. Photon Sol
+                integrates seamlessly with Phantom wallet, providing a secure
+                and convenient way to manage trading funds.
+              </li><br />
+              <br />
+            </ol> -->
+
+            <p>
+              Photon Sol’s user interface stands out for its clarity and
+              accessibility. Upon connecting a Phantom wallet, traders are
+              greeted with a streamlined dashboard that offers a comprehensive
+              overview of market activity. The platform’s live pairs feed and
+              trending page are particularly noteworthy, providing real-time
+              insights into newly launched tokens and market movements.
+            </p>
+            <br />
+            <br />
+            <h2 class="pb-4 pt-4 text-2xl font-bold">Setting Up Filters</h2>
+
+            <figure class="h-auto w-auto pb-8">
+              <img
+                src="https://preview.redd.it/beginners-guide-to-trading-meme-coins-fast-secure-intro-v0-uagw2fwa2zce1.png?width=640&crop=smart&auto=webp&s=4328ebe97393924cdb8a8cb766f7b9e6b9c84f6c"
+                alt=""
+              />
+            </figure>
+
+            <p>
+              To effectively trade meme coins, it’s crucial to set up the right
+              filters. Here’s how: <br />
+
+              Quick Buy Options: Enable quick buy for rapid purchases. For
+              example, at the top you can set the value you want to buy (let's
+              say $10), after that on the right part of the screen you can
+              instantly buy any token you see appears on the new pairs screen.
+            </p>
+
+            <h2 class="pb-4 pt-4 text-2xl font-bold">Filters Buttons</h2>
+
+            <figure class="h-auto w-auto pb-8">
+              <img
+                src="https://preview.redd.it/beginners-guide-to-trading-meme-coins-fast-secure-intro-v0-79qc1ya43zce1.png?width=640&crop=smart&auto=webp&s=25d55800521587e66caf713fd114bea6110be7dc"
+                alt=""
+              />
+            </figure>
+            <p>
+              In the top right corner, you have the filters button (filters are
+              the most important part before you start trading meme coins). Here
+              you have from security filters to market cap, liquidity, by
+              volume, by sell etc.
+              <br />
+              Liquidity Filters: Set minimum liquidity requirements to avoid low-liquidity
+              tokens. A good starting point is around $1,000.
+              <br />
+              Security Filters: Filter out tokens without proper security features
+              like mint authority and LP burned status.
+              <br />
+              Market Cap Filters: Adjust market cap filters to target smaller, potentially
+              high-growth tokens. For example, you might want to look for tokens
+              with a total market cap of around $20,000.
+              <br />
+              Note: Play around with these filters to find good coins, your strategy
+              may be different.
+            </p>
+            <br />
+            <br />
+
+            <h2 class="pb-4 pt-4 text-2xl font-bold">Trading on Solana</h2>
+
+            <p>
+              To snipe meme coins on Solana using Photon the Solana chain is
+              selected by default, but is better to check it before you get
+              stared here you have an image where you can select the chain: <br
+              />
+              After you selected the token you want to trade on photon, let's take
+              a look on the chart page.
+            </p>
+            <figure class="h-auto w-auto pb-8">
+              <img
+                src="https://preview.redd.it/beginners-guide-to-trading-meme-coins-fast-secure-intro-v0-vkvdfo734zce1.png?width=640&crop=smart&auto=webp&s=85696f0951f35acd636ec8d32a1cf55670bd43b9"
+                alt=""
+              />
+            </figure>
+            <br /><br />
+
+            <h2 class="pb-4 pt-4 text-2xl font-bold">Chart Page</h2>
+
+            <p>
+              On the chart page you have all the tools you need to make a
+              successful, secure and fast trade. Why I'm saying that ? Let's see
+              !
+              <br />
+              First, you have the information bubbles represented in real time on
+              your chart.
+              <br />
+              - to explain in the most simple way, the green bubbles represent something
+              positive happened as the dev bought the coin, and he's still invested
+              in it or a sniper bought from the coin. The red bubbles represent something
+              negative, as the dev just sold he's bag or a sniper sold.
+              <br />
+              Down below, you have images which represent the situations, as you
+              can see you have all necessary information about what happened in real
+              time. <br />
+            </p>
+            <br />
+            <figure class="h-auto w-auto pb-8">
+              <img
+                src="https://preview.redd.it/beginners-guide-to-trading-meme-coins-fast-secure-intro-v0-ym2360yu5zce1.png?width=640&crop=smart&auto=webp&s=ef265d48db92bcc2acc6017e0163d0a9d9ff8006"
+                alt=""
+              />
+            </figure>
+            <br />
+            <figure class="h-auto w-auto pb-8">
+              <img
+                src="https://preview.redd.it/beginners-guide-to-trading-meme-coins-fast-secure-intro-v0-81rf75or7zce1.png?width=640&crop=smart&auto=webp&s=e62c52b7590a947bc8e3380c46c3e45d3ae4ad6e"
+                alt=""
+              />
+            </figure>
+            <br />
+            <figure class="h-auto w-auto pb-8">
+              <img
+                src="https://preview.redd.it/beginners-guide-to-trading-meme-coins-fast-secure-intro-v0-j6uc8b6u7zce1.png?width=640&crop=smart&auto=webp&s=82c1afa57aa05a86ba67a32966c24b4ab0068781"
+                alt=""
+              />
+            </figure>
+            <br />
+            <figure class="h-auto w-auto pb-8">
+              <img
+                src="https://preview.redd.it/beginners-guide-to-trading-meme-coins-fast-secure-intro-v0-zv45tu7x7zce1.png?width=640&crop=smart&auto=webp&s=7195249491b49cf533a4c5c628c2b4e97566bae2"
+                alt=""
+              />
+            </figure>
+            <br /><br />
+
+            <h2 class="pb-4 pt-4 text-2xl font-bold">
+              Scrolling down on the chart page, you can find Data & Security
+            </h2>
+            <p>
+              Using this part of the Photon product can save you time and a lot
+              of mistakes that can cost you money. Here you can find :<br />
+              <br />
+              - Mint Authority
+              <br />
+              - Freeze Authority
+              <br />
+              - LP Burned
+              <br />
+              - Pooled Bro (Bro is the name of the token)
+              <br />
+              - Pooled SOL
+              <br />
+              - Top 10 Holders
+              <br />
+              - Deployed
+              <br />
+              If we Scroll up, we can find the token details, here you can verify
+              the profile of the token (that's not important in this guide, to verify
+              profile the devs can send the details to photon team so they can mark
+              it as a safe and legit traded token on the platform) <br />
+            </p>
+
+            <figure class="h-auto w-auto pb-8 pt-8">
+              <img
+                src="https://preview.redd.it/beginners-guide-to-trading-meme-coins-fast-secure-intro-v0-8f0cne028zce1.png?width=640&crop=smart&auto=webp&s=9f044dd3e48cde7eeb052093f7c24941baef4797"
+                alt=""
+              />
+            </figure>
+
+            <p>
+              Next you can see the total volume of the token you want to buy
+              from 5m to 24h, the total of the buys and sells + number of
+              transactions and makers.
+              <br />
+              And you have the buy and sell panel - Scrolling down, we go more into
+              depth about this most important part of trading on photon.
+            </p>
+
+            <br />
+
+            <figure class="h-auto w-auto pb-8 pt-8">
+              <img
+                src="https://preview.redd.it/beginners-guide-to-trading-meme-coins-fast-secure-intro-v0-lsld1nnw8zce1.png?width=535&format=png&auto=webp&s=8ef8a112cc80f7a14bebf89fdfa84508de05cbc2"
+                alt=""
+              />
+            </figure>
+
+            <br /><br />
+
+            <h2 class="pb-4 pt-4 text-2xl font-bold">
+              Buy & Sell, Limit Order and Advanced Settings
+            </h2>
+
+            <figure class="h-auto w-auto pb-8">
+              <img
+                src="https://preview.redd.it/beginners-guide-to-trading-meme-coins-fast-secure-intro-v0-ht1xetbadzce1.png?width=640&crop=smart&auto=webp&s=56b9ed38e2ffdb3a4893228de667ca10ae2e8008"
+                alt=""
+              />
+            </figure>
+            <p>
+              Let's take every part of the image one by one. <br />
+
+              Let's get started :<br />
+
+              -In the first image: you have the buy function to select how much
+              of would you have to buy the coin you choose from 0.07 to 10 sols,
+              or you can pick your own value.<br />
+
+              - In the second image: you can select from what wallet you want to
+              trade (YES, PHOTON HAVE MULTI-WALLET FUNCTION, IS EXCELLENT !)<br
+              />
+
+              - In the third image: situation, you can choose the % you want to
+              sell your token or pick your own value.<br />
+
+              - In the fourth image: represents the Auto Sell function - you as
+              a trade can set your own stop loss by MC set the amount you want
+              to sell in % and an expiration time in hrs. In the take profit tab
+              is the same as on stop loss, but here you can choose at what point
+              you want to take profit from your investment and what % you want.<br
+              />
+
+              - Last image: you have the Advanced Settings, here you can set
+              your slippage %, the smart-mev protection, set the speed of the
+              trading - priority fee and the bribery Amount.<br />
+
+              In the next days there will be new in depth guides about photon.
+              We're going to go in detail how to set up every part for a perfect
+              trade. <br />
+            </p>
+            <br /><br />
+            <h2 class="pb-4 pt-4 text-2xl font-bold">Memescope</h2>
+            <br />
+            <p>
+              The Memescope feature helps you track and trade Pump.Fun tokens.
+            </p>
+            <br />
+            <figure class="h-auto w-auto pb-8">
+              <img
+                src="https://preview.redd.it/beginners-guide-to-trading-meme-coins-fast-secure-intro-v0-nzg79mdhhzce1.png?width=640&crop=smart&auto=webp&s=95699521baf2ed322ec7a5cc5a28a88ccacea3e1"
+                alt=""
+              />
+            </figure>
+            <br />
+            <p>
+              New Creations: See the newest tokens created on Pump, Moonshot,
+              Memelive. <br />
+
+              About To Graduate: Tokens that almost reached Raydium.<br />
+
+              Graduated Tokens: Track tokens that have successfully launched and
+              graduated to platforms like Raydium.<br />
+
+              Filter Options: Use filters to refine your search and focus on the
+              most promising tokens.<br />
+            </p>
+            <br />
+            <br />
+            <h2 class="pb-4 pt-4 text-2xl font-bold">Conclusion</h2>
+            <br />
+            <p>
+              Photon is a powerful tool and the best one for trading meme coins
+              across multiple blockchains. Its advanced features, like quick buy
+              options, limit orders, and comprehensive filters, make it a
+              valuable asset for any crypto trader.
+              <br />
+              And an honest opinion, in the end we all want to hit that meme coin
+              that will moon and make us money, we all know that. But, getting there
+              is luck or just knowledge of what you are doing. Taking your time and
+              learning a tool can save you from a lot of headaches and losing money.
+              Photon is fast, secure and give you everything that you need to focus
+              on just 1 screen and do your job until the end. If you have any trouble
+              from: connecting your wallet, to make a buy or a sell, you can all
+              the time join the photon telegram lounge, to communicate your problem.
+              The support is online all the time and everyone is there to help you
+              with your problem.
+              <br />
+              Crypto is not just random trading. It is knowledge and a little bit
+              of luck, but the most important part is the community you have and
+              the people that are willing to help on your mission, and Photon delivers
+              that.
+              <br />
+              Thanks !
+            </p>
+            <p>
+              <strong>Get started now for free on photon-sol platform :</strong>
+            </p>
+            <br />
+            <Button
+              className="bg-blue-700 text-white hover:bg-white hover:text-black"
+              ><a href="https://photon-sol.tinyastro.io/@ma004"
+                ><p class="">Join Now Photon</p></a
+              >
+            </Button>
+          </article>
+
+          <!-- <aside
+        aria-label="Related articles"
+        class="bg-gray-50 py-8 dark:bg-gray-800 lg:py-24"
+      >
+        <div class="mx-auto max-w-screen-xl px-4">
+          <h2 class="mb-8 text-2xl font-bold text-gray-900 dark:text-white">
+            Related articles
+          </h2>
+          <div class="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
+            <article class="max-w-xs">
+              <a href="#">
+                <img
+                  src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-1.png"
+                  class="mb-5 rounded-lg"
+                  alt="Image 1"
+                />
+              </a>
+              <h2
+                class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white"
+              >
+                <a href="#">Our first office</a>
+              </h2>
+              <p class="mb-4 text-gray-500 dark:text-gray-400">
+                Over the past year, Volosoft has undergone many changes! After
+                months of preparation.
+              </p>
+              <a
+                href="#"
+                class="text-primary-600 dark:text-primary-500 inline-flex items-center font-medium underline underline-offset-4 hover:no-underline"
+              >
+                Read in 2 minutes
+              </a>
+            </article>
+            <article class="max-w-xs">
+              <a href="#">
+                <img
+                  src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-2.png"
+                  class="mb-5 rounded-lg"
+                  alt="Image 2"
+                />
+              </a>
+              <h2
+                class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white"
+              >
+                <a href="#">Enterprise design tips</a>
+              </h2>
+              <p class="mb-4 text-gray-500 dark:text-gray-400">
+                Over the past year, Volosoft has undergone many changes! After
+                months of preparation.
+              </p>
+              <a
+                href="#"
+                class="text-primary-600 dark:text-primary-500 inline-flex items-center font-medium underline underline-offset-4 hover:no-underline"
+              >
+                Read in 12 minutes
+              </a>
+            </article>
+            <article class="max-w-xs">
+              <a href="#">
+                <img
+                  src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-3.png"
+                  class="mb-5 rounded-lg"
+                  alt="Image 3"
+                />
+              </a>
+              <h2
+                class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white"
+              >
+                <a href="#">We partnered with Google</a>
+              </h2>
+              <p class="mb-4 text-gray-500 dark:text-gray-400">
+                Over the past year, Volosoft has undergone many changes! After
+                months of preparation.
+              </p>
+              <a
+                href="#"
+                class="text-primary-600 dark:text-primary-500 inline-flex items-center font-medium underline underline-offset-4 hover:no-underline"
+              >
+                Read in 8 minutes
+              </a>
+            </article>
+            <article class="max-w-xs">
+              <a href="#">
+                <img
+                  src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-4.png"
+                  class="mb-5 rounded-lg"
+                  alt="Image 4"
+                />
+              </a>
+              <h2
+                class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white"
+              >
+                <a href="#">Our first project with React</a>
+              </h2>
+              <p class="mb-4 text-gray-500 dark:text-gray-400">
+                Over the past year, Volosoft has undergone many changes! After
+                months of preparation.
+              </p>
+              <a
+                href="#"
+                class="text-primary-600 dark:text-primary-500 inline-flex items-center font-medium underline underline-offset-4 hover:no-underline"
+              >
+                Read in 4 minutes
+              </a>
+            </article>
+          </div>
+        </div>
+      </aside> -->
+
+          <!-- new test section -->
+        </div>
+
+        <footer class="pb-32 pt-4 md:pb-8 md:pt-8">
+          <div class="container mx-auto px-4 text-sm md:px-0">
+            <div
+              class="flex flex-col-reverse items-center justify-between gap-2 md:flex-row"
+            >
+              <p class="text-muted-foreground">
+                Brought to you by <a class="underline" href="" target="_blank"
+                  >Soltradingbots</a
+                >
+              </p>
+              <div class="flex items-center gap-1">
+                <a href="hhttps://x.com/MitreaAndreiRa1" target="_blank">
+                  <Button variant="ghost" size="icon">
+                    <svg
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                    >
+                      <title>X</title>
+                      <path
+                        d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
+                      ></path>
+                    </svg>
+                  </Button>
+                </a>
+
+                <a
+                  href="https://www.reddit.com/r/SolanaSniperBots/"
+                  target="_blank"
+                >
+                  <Button variant="ghost" size="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-reddit"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M6.167 8a.83.83 0 0 0-.83.83c0 .459.372.84.83.831a.831.831 0 0 0 0-1.661m1.843 3.647c.315 0 1.403-.038 1.976-.611a.23.23 0 0 0 0-.306.213.213 0 0 0-.306 0c-.353.363-1.126.487-1.67.487-.545 0-1.308-.124-1.671-.487a.213.213 0 0 0-.306 0 .213.213 0 0 0 0 .306c.564.563 1.652.61 1.977.61zm.992-2.807c0 .458.373.83.831.83s.83-.381.83-.83a.831.831 0 0 0-1.66 0z"
+                      ></path>
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.828-1.165c-.315 0-.602.124-.812.325-.801-.573-1.9-.945-3.121-.993l.534-2.501 1.738.372a.83.83 0 1 0 .83-.869.83.83 0 0 0-.744.468l-1.938-.41a.2.2 0 0 0-.153.028.2.2 0 0 0-.086.134l-.592 2.788c-1.24.038-2.358.41-3.17.992-.21-.2-.496-.324-.81-.324a1.163 1.163 0 0 0-.478 2.224q-.03.17-.029.353c0 1.795 2.091 3.256 4.669 3.256s4.668-1.451 4.668-3.256c0-.114-.01-.238-.029-.353.401-.181.688-.592.688-1.069 0-.65-.525-1.165-1.165-1.165"
+                      ></path>
+                    </svg>
+                  </Button>
+                </a>
+                <a
+                  href="https://www.reddit.com/r/SolanaSniperBots/comments/1huuy3g/if_you_find_the_guides_helpful_you_can_support_me/"
+                  target="_blank"
+                >
+                  <Button variant="ghost" size="icon">
+                    <svg
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                    >
+                      <title>Buy Me A Coffee</title>
+                      <path
+                        d="M20.216 6.415l-.132-.666c-.119-.598-.388-1.163-1.001-1.379-.197-.069-.42-.098-.57-.241-.152-.143-.196-.366-.231-.572-.065-.378-.125-.756-.192-1.133-.057-.325-.102-.69-.25-.987-.195-.4-.597-.634-.996-.788a5.723 5.723 0 00-.626-.194c-1-.263-2.05-.36-3.077-.416a25.834 25.834 0 00-3.7.062c-.915.083-1.88.184-2.75.5-.318.116-.646.256-.888.501-.297.302-.393.77-.177 1.146.154.267.415.456.692.58.36.162.737.284 1.123.366 1.075.238 2.189.331 3.287.37 1.218.05 2.437.01 3.65-.118.299-.033.598-.073.896-.119.352-.054.578-.513.474-.834-.124-.383-.457-.531-.834-.473-.466.074-.96.108-1.382.146-1.177.08-2.358.082-3.536.006a22.228 22.228 0 01-1.157-.107c-.086-.01-.18-.025-.258-.036-.243-.036-.484-.08-.724-.13-.111-.027-.111-.185 0-.212h.005c.277-.06.557-.108.838-.147h.002c.131-.009.263-.032.394-.048a25.076 25.076 0 013.426-.12c.674.019 1.347.067 2.017.144l.228.031c.267.04.533.088.798.145.392.085.895.113 1.07.542.055.137.08.288.111.431l.319 1.484a.237.237 0 01-.199.284h-.003c-.037.006-.075.01-.112.015a36.704 36.704 0 01-4.743.295 37.059 37.059 0 01-4.699-.304c-.14-.017-.293-.042-.417-.06-.326-.048-.649-.108-.973-.161-.393-.065-.768-.032-1.123.161-.29.16-.527.404-.675.701-.154.316-.199.66-.267 1-.069.34-.176.707-.135 1.056.087.753.613 1.365 1.37 1.502a39.69 39.69 0 0011.343.376.483.483 0 01.535.53l-.071.697-1.018 9.907c-.041.41-.047.832-.125 1.237-.122.637-.553 1.028-1.182 1.171-.577.131-1.165.2-1.756.205-.656.004-1.31-.025-1.966-.022-.699.004-1.556-.06-2.095-.58-.475-.458-.54-1.174-.605-1.793l-.731-7.013-.322-3.094c-.037-.351-.286-.695-.678-.678-.336.015-.718.3-.678.679l.228 2.185.949 9.112c.147 1.344 1.174 2.068 2.446 2.272.742.12 1.503.144 2.257.156.966.016 1.942.053 2.892-.122 1.408-.258 2.465-1.198 2.616-2.657.34-3.332.683-6.663 1.024-9.995l.215-2.087a.484.484 0 01.39-.426c.402-.078.787-.212 1.074-.518.455-.488.546-1.124.385-1.766zm-1.478.772c-.145.137-.363.201-.578.233-2.416.359-4.866.54-7.308.46-1.748-.06-3.477-.254-5.207-.498-.17-.024-.353-.055-.47-.18-.22-.236-.111-.71-.054-.995.052-.26.152-.609.463-.646.484-.057 1.046.148 1.526.22.577.088 1.156.159 1.737.212 2.48.226 5.002.19 7.472-.14.45-.06.899-.13 1.345-.21.399-.072.84-.206 1.08.206.166.281.188.657.162.974a.544.544 0 01-.169.364zm-6.159 3.9c-.862.37-1.84.788-3.109.788a5.884 5.884 0 01-1.569-.217l.877 9.004c.065.78.717 1.38 1.5 1.38 0 0 1.243.065 1.658.065.447 0 1.786-.065 1.786-.065.783 0 1.434-.6 1.499-1.38l.94-9.95a3.996 3.996 0 00-1.322-.238c-.826 0-1.491.284-2.26.613z"
+                      ></path>
+                    </svg>
+                  </Button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </section>
+  </main>
+</Layout>
